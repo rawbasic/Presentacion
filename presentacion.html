@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- CORREGIDO: meta viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentación Raw Basic</title>
+  <link rel="stylesheet" href="estilospresentacion.css">
+</head>
+<body>
+  <div class="slider">
+    <!-- Ejemplo para la flecha izquierda -->
+    <button class="arrow left" onclick="moveSlide(-1)">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+        <circle cx="19" cy="19" r="18" stroke="#0f1d41" stroke-width="2" fill="none"/>
+        <polyline points="22,12 15,19 22,26" fill="none" stroke="#0f1d41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <!-- Ejemplo para la flecha derecha -->
+    <button class="arrow right" onclick="moveSlide(1)">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+        <circle cx="19" cy="19" r="18" stroke="#0f1d41" stroke-width="2" fill="none"/>
+        <polyline points="16,12 23,19 16,26" fill="none" stroke="#0f1d41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="diapositivas-wrapper">
+
+      <!-- 0: Portada Raw Basic -->
+      <div class="diapositiva active">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+          <img src="imagenes/logo.png" alt="Raw Basic" class="logo-inicio">
+          <p style="margin-top: 2rem; font-size: 1.3rem; color: #444; text-align: center;">
+            Alumna: Lola Bello<br>
+            Profesor: Wenceslao Zavala<br>
+            Materia: Contenidos y creatividad I
+          </p>
+        </div>
+      </div>
+
+      <!-- 1: Sobre el sitio -->
+      <div class="diapositiva">
+        <div class="contenido-simple">
+          <h2>Sobre Raw Basic</h2>
+          <p>
+            Raw Basic es un sitio web que representa a una marca de indumentaria con identidad propia: minimalista, urbana, de colores neutros y prendas lisas. Este sitio se destaca en vender remeras básicas lisas, con una propuesta estética clara que se refleja tanto en sus productos como en el diseño del sitio. <br>
+            <a href="https://rawbasic.github.io/rawbasic/" target="_blank">Visitar el sitio</a>
+          </p>
+          <h3 class="subtitulo-objetivos">Objetivos</h3>
+          <div class="objetivos-bloques">
+            <div class="objetivo-bloque">Vender</div>
+            <div class="objetivo-bloque">Ganar visibilidad</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: Muestra de productos -->
+      <div class="diapositiva">
+        <div class="contenido-simple">
+          <h2>Tienda</h2>
+          <p>Estas son unas muestras de lo que se vende en nuestro sitio.</p>
+          <div class="portada-fotos-grid">
+            <div class="portada-foto-card">
+              <img src="imagenes/destacado1-min.png" alt="Foto 1" class="img-portada">
+            </div>
+            <div class="portada-foto-card">
+              <img src="imagenes/destacado2-min.png" alt="Foto 2" class="img-portada">
+            </div>
+            <div class="portada-foto-card">
+              <img src="imagenes/destacado3-min.png" alt="Foto 3" class="img-portada">
+            </div>
+            <div class="portada-foto-card">
+              <img src="imagenes/destacado4-min.png" alt="Foto 4" class="img-portada">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: Wireframes -->
+      <div class="diapositiva wireframe-bg">
+        <div class="contenido-simple wireframe-slide" style="margin-top: 4vh;">
+          <h2 class="wireframe-title" style="margin-top: 0;">Wireframes</h2>
+          <div class="wireframes-flex">
+  <div class="wireframe-block">
+    <img src="imagenes/MOCKUP COMPU.png" class="wireframe-desktop" alt="Wireframe escritorio">
+    <div class="wireframe-label">Versión escritorio</div>
+  </div>
+  <div class="wireframe-block">
+    <img src="imagenes/MOCKUP CELU.png" class="wireframe-mobile" alt="Wireframe mobile">
+    <div class="wireframe-label">Versión mobile</div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <!--4: Paleta cromática y Tipografía  -->
+      <div class="diapositiva">
+        <div class="contenido-simple paleta">
+          <h2>Diseño y fundamentación</h2> <br>
+          <p style="font-family: 'Times New Roman', Times, serif; font-size:1.1rem;">Paleta cromática</p>
+          <div class="colores-paleta">
+            <div class="color-box-container">
+              <div class="color-box" data-color="#c2c1c1"></div>
+              <div class="color-label">#c2c1c1</div>
+            </div>
+            <div class="color-box-container">
+              <div class="color-box" data-color="#444"></div>
+              <div class="color-label">#444</div>
+            </div>
+            <div class="color-box-container">
+              <div class="color-box" data-color="#ffffff"></div>
+              <div class="color-label">#ffffff</div>
+            </div>
+            <div class="color-box-container">
+              <div class="color-box" data-color="#00000033"></div>
+              <div class="color-label">#00000033</div>
+            </div>
+          </div>
+          <div class="tipografia" style="margin-top: 3em;">
+            <p style="font-family: 'Times New Roman', Times, serif; font-size:1.1rem;">Tipografía</p>
+            <span style="font-family: 'Times New Roman', Times, serif"><p>Fuente principal: </span> <span style="font-family: 'Times New Roman', Times, serif;">Times New Roman</span></p>
+            <p style="font-family: 'Times New Roman', Times, serif; font-size:1.1rem;">Ejemplo de título</p>
+            <p style="font-family: 'Times New Roman', Times, serif; font-size:1.1rem;">Ejemplo de texto normal</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: Diseño -->
+      <div class="diapositiva">
+        <div class="contenido-simple componentes">
+          <h2>Componentes</h2> <br>
+          <div class="componentes-grid">
+            <div class="componente-burbuja">Diseño claro y coherente</div>
+            <div class="componente-burbuja">Navegación intuitiva y simple</div>
+            <div class="componente-burbuja">Diseño responsive</div>
+            <div class="componente-burbuja">Uso de hover</div>
+            <div class="componente-burbuja">Imágenes adaptadas al ancho</div>
+            <div class="componente-burbuja">Elementos visuales destacados</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6: Navegación -->
+      <div class="diapositiva">
+        <div class="contenido-simple navegacion">
+          <h2>Características del desarrollo</h2>
+          <div class="caracteristicas-grid">
+            <div class="caracteristica-card">
+              <span class="icono">🔗</span>
+              HTML vinculado con CSS mediante <code>&lt;link&gt;</code>
+            </div>
+            <div class="caracteristica-card">
+              <span class="icono">🎨</span>
+              Estilos aplicados con clases y selectores
+            </div>
+            <div class="caracteristica-card">
+              <span class="icono">📐</span>
+              Columnas flexibles con flexbox
+            </div>
+            <div class="caracteristica-card">
+              <span class="icono">📱</span>
+              Diseño responsive con media queries
+            </div>
+            <div class="caracteristica-card">
+              <span class="icono">↔️</span>
+              Columnas y filas según <code>flex-direction</code>
+            </div>
+            <div class="caracteristica-card">
+              <span class="icono">👻</span>
+              Elementos ocultos con display, opacity y visibility
+            </div>
+            <div class="caracteristica-card">
+              <span class="icono">🖼️</span>
+              Imágenes siempre adaptadas al ancho
+            </div>
+            <div class="caracteristica-card">
+              <span class="icono">🧩</span>
+              Reglas CSS específicas para cada etiqueta
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7: Contacto -->
+      <div class="diapositiva">
+        <div class="contenido-simple">
+          <h2>Muchas gracias</h2>
+          <p>¡Conoce nuestra nueva colección!<br>
+            <a href="rawbasic@gmail.com">rawbasic@gmail.com</a></p> <br>
+          <a href="https://rawbasic.github.io/rawbasic/" target="_blank" class="boton-ejemplo" style="margin-top: 2rem;">Ir al sitio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.diapositiva');
+    function showSlide(n) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === n);
+      });
+    }
+    function moveSlide(dir) {
+      currentSlide += dir;
+      if (currentSlide < 0) currentSlide = slides.length-1;
+      if (currentSlide >= slides.length) currentSlide = 0;
+      showSlide(currentSlide);
+    }
+    showSlide(currentSlide);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') moveSlide(-1);
+      if (e.key === 'ArrowRight') moveSlide(1);
+    });
+  </script>
+</body>
+</html>
